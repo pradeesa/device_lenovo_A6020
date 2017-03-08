@@ -2,7 +2,7 @@
 device=$(getprop ro.product.device)
 
 ### Patch for old recoveries - start
-if [ "$device" = "default" ] || [ "$device" = "A6020" ]; then 
+if [ "$device" = "default" ] || [ "$device" = "A6020" ]; then
     board_id="";
     for e in $(cat /proc/cmdline);
     do
@@ -12,7 +12,7 @@ if [ "$device" = "default" ] || [ "$device" = "A6020" ]; then
             board_id=$(echo $e |cut -d":" -f0 |cut -d"=" -f2);
         fi
     done
-    
+
     device="A6020a40";
     case "$board_id" in
         "S82918B1"|"S82918H1")
@@ -32,5 +32,11 @@ fi
 ### Patch for old recoveries - end
 
 # Move variant-specific blobs
+mount /system
+mount -o rw,remount /system
+mount -o rw,remount /system /system
+mount /firmware
 mv /system/etc/firmware/variant/$device/venus* /system/etc/firmware/
 rm -rf /system/etc/firmware/variant
+umount /firmware/
+umount /system
