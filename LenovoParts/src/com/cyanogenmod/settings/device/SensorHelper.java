@@ -28,7 +28,7 @@ import android.hardware.SensorManager;
 import android.util.Log;
 
 public class SensorHelper {
-    private static final String TAG = "CMActions";
+    private static final String TAG = "LenovoParts";
 
     private static final int BATCH_LATENCY_IN_MS = 100;
 

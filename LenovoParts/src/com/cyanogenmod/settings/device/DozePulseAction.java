@@ -21,7 +21,7 @@ import android.content.Intent;
 import android.util.Log;
 
 public class DozePulseAction implements SensorAction, ScreenStateNotifier {
-    private static final String TAG = "CMActions";
+    private static final String TAG = "LenovoParts";
 
     private static final int DELAY_BETWEEN_DOZES_IN_MS = 1500;
 

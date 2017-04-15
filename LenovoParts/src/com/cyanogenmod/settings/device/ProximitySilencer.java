@@ -28,7 +28,7 @@ import android.util.Log;
 import static android.telephony.TelephonyManager.*;
 
 public class ProximitySilencer extends PhoneStateListener implements SensorEventListener, UpdatedStateNotifier {
-    private static final String TAG = "CMActions-ProximitySilencer";
+    private static final String TAG = "LenovoParts-ProximitySilencer";
 
     private static final int SILENCE_DELAY_MS = 500;
 

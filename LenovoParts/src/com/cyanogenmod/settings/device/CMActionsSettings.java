@@ -25,12 +25,11 @@ import android.provider.Settings;
 import android.util.Log;
 
 public class CMActionsSettings {
-    private static final String TAG = "CMActions";
+    private static final String TAG = "LenovoParts";
 
     private static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     private static final String GESTURE_IR_WAKEUP_KEY = "gesture_ir_wake_up";
     private static final String GESTURE_IR_SILENCER_KEY = "gesture_ir_silencer";
-
 
     private final Context mContext;
     private final UpdatedStateNotifier mUpdatedStateNotifier;

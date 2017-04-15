@@ -23,7 +23,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 public class ServiceWrapper extends android.app.Service {
-    static final String TAG = "CMActions-ServiceWrapper";
+    static final String TAG = "LenovoParts-ServiceWrapper";
 
     private final IBinder mBinder = new LocalBinder();
     private CMActionsService mCmActionsService;

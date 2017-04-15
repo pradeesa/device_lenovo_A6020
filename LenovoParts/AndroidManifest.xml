@@ -16,7 +16,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="CMActions"
+        android:label="LenovoParts"
         android:persistent="true"
         android:theme="@android:style/Theme.Material.Settings" >
 
@@ -35,8 +35,8 @@
 
         <activity
                   android:excludeFromRecents="true"
-                  android:name="CMActions"
-                  android:label="CMActions"
+                  android:name="LenovoParts"
+                  android:label="LenovoParts"
                   android:launchMode="singleInstance"
                   android:screenOrientation="portrait"
                   android:windowAnimationStyle="@null">

@@ -1,3 +1,3 @@
-# CMActions
+# LenovoParts
 PRODUCT_PACKAGES += \
-    CMActions
+    LenovoParts

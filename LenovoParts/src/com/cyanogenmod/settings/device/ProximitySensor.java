@@ -22,7 +22,7 @@ import android.hardware.SensorEventListener;
 import android.util.Log;
 
 public class ProximitySensor implements ScreenStateNotifier, SensorEventListener {
-    private static final String TAG = "CMActions-ProximitySensor";
+    private static final String TAG = "LenovoParts-ProximitySensor";
 
     private final CMActionsSettings mCMActionsSettings;
     private final SensorHelper mSensorHelper;

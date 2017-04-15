@@ -28,7 +28,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-    static final String TAG = "CMActions";
+    static final String TAG = "LenovoParts";
     private ServiceWrapper mServiceWrapper;
 
     @Override
