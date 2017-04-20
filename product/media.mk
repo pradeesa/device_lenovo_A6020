@@ -21,3 +21,7 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libOmxVidcCommon \
     libstagefrighthw
+
+# Widevine DRM symbol, boringssl-compat subset
+PRODUCT_PACKAGES += \
+    libshim_boringssl
