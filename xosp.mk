@@ -14,13 +14,18 @@
 
 $(call inherit-product, device/lenovo/A6020/full_A6020.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product-if-exists, vendor/cm/config/common_full_phone.mk)
+# Inherit some common XOSP stuff.
+$(call inherit-product-if-exists, vendor/xosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/xosp/config/xosp.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
-## Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A6020
-PRODUCT_NAME := lineage_A6020
+PRODUCT_NAME := xosp_A6020
+
+# Misc
+IS_ARM64 := TRUE
+ROOT_METHOD := magisk
