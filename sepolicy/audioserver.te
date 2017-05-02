@@ -1,2 +1,4 @@
+allow audioserver mpctl_data_file:dir search;
+allow audioserver mpctl_data_file:dir write;
 allow audioserver sysfs:dir { read open };
 allow audioserver system_data_file:sock_file write;
